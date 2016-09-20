@@ -9,5 +9,5 @@ RUN touch /var/lib/rpm/* &&\
   rpm --import http://ftp.scientificlinux.org/linux/scientific/5x/x86_64/RPM-GPG-KEYs/RPM-GPG-KEY-cern &&\
   yum install -y devtoolset-2 make binutils automake autoconf libtool pkgconfig &&\
   scl enable devtoolset-2 /build.sh &&\
-  yum remove --setopt=clean_requirements_on_remove=1 -y devtoolset-2 make binutils automake autoconf libtool pkgconfig wget &&\
+  yum remove -y devtoolset-2 make binutils automake autoconf libtool pkgconfig wget &&\
   yum clean all
