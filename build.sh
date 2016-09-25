@@ -9,9 +9,9 @@ LIBEV_VER=4.22
 LIBEV_URL=http://dist.schmorp.de/libev/libev-${LIBEV_VER}.tar.gz
 LIBEV_SHA256=736079e8ac543c74d59af73f9c52737b3bfec9601f020bf25a87a4f4d0f01bd6
 
-OPENSSL_VER=1.0.2h
+OPENSSL_VER=1.0.2i
 OPENSSL_URL=ftp://ftp.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
-OPENSSL_SHA256=1d4007e53aad94a5b2002fe045ee7bb0b3d98f1a47f8b2bc851dcd1c74332919
+OPENSSL_SHA256=9287487d11c9545b6efb287cdb70535d4e9b284dd10d51441d9b9963d000de6f
 
 NGHTTP2_VER=1.15.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
