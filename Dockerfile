@@ -1,6 +1,6 @@
 FROM centos:centos5
 
-ARG MAKE_J=1
+ARG MAKE_J
 
 ADD build.sh /
 RUN touch /var/lib/rpm/* &&\

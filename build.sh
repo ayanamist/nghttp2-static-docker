@@ -1,6 +1,10 @@
 #!/bin/bash
 set -x
 
+if [[ -z ${MAKE_J} ]]; then
+  MAKE_J=$(grep -c ^processor /proc/cpuinfo)
+fi
+
 ZLIB_VER=1.2.8
 ZLIB_URL=http://zlib.net/zlib-${ZLIB_VER}.tar.gz
 ZLIB_SHA256=36658cb768a54c1d4dec43c3116c27ed893e88b02ecfcb44f2166f9c0b7f2a0d
