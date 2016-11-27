@@ -5,19 +5,19 @@ ZLIB_VER=1.2.8
 ZLIB_URL=http://zlib.net/zlib-${ZLIB_VER}.tar.gz
 ZLIB_SHA256=36658cb768a54c1d4dec43c3116c27ed893e88b02ecfcb44f2166f9c0b7f2a0d
 
-LIBEV_VER=4.22
-LIBEV_URL=http://dist.schmorp.de/libev/libev-${LIBEV_VER}.tar.gz
-LIBEV_SHA256=736079e8ac543c74d59af73f9c52737b3bfec9601f020bf25a87a4f4d0f01bd6
+LIBEV_VER=4.23
+LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-${LIBEV_VER}.tar.gz
+LIBEV_SHA256=c7fe743e0c3b50dd34bf222ebdba4e8acac031d41ce174f17890f8f84eeddd7a
 
 OPENSSL_VER=1.0.2j
 OPENSSL_URL=ftp://ftp.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
 OPENSSL_SHA256=e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
 
-NGHTTP2_VER=1.16.1
+NGHTTP2_VER=1.17.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=c690d89f653722e335c36aec861d5f1769cfdb9ea873d9874ffa54dac4532cf3
+NGHTTP2_SHA256=d7f1c3ea4ca8325998607140284e8640743366cc9ec87fbbcc11842e6106f2c4
 
-WGET="wget --no-check-certificate --secure-protocol=TLSv1 -T 30"
+WGET="wget --no-check-certificate --secure-protocol=TLSv1 -T 30 -nv"
 
 mkdir /build &&\
 cd /build &&\
