@@ -21,6 +21,10 @@ NGHTTP2_VER=1.18.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
 NGHTTP2_SHA256=30b7a1fc21f58eadbcd124791dd7dbda50b9d4ad113b49d78d04ded49c22be8a
 
+C_ARES_VER=1.12.0
+C_ARES_URL=https://c-ares.haxx.se/download/c-ares-${C_ARES_VER}.tar.gz
+C_ARES_SHA256=8692f9403cdcdf936130e045c84021665118ee9bfea905d1a76f04d4e6f365fb
+
 WGET="wget --no-check-certificate --secure-protocol=TLSv1 -T 30 -nv"
 
 mkdir /build &&\
@@ -29,7 +33,7 @@ ${WGET} -O zlib.tar.gz ${ZLIB_URL} &&\
 echo "$ZLIB_SHA256  zlib.tar.gz" | sha256sum -c - &&\
 tar xf zlib.tar.gz &&\
 mv zlib-${ZLIB_VER} zlib &&\
-rm -f zlib.md5 zlib.tar.gz &&\
+rm -f zlib.tar.gz &&\
 cd zlib &&\
 ./configure --static &&\
 make clean install -j${MAKE_J} &&\
@@ -39,7 +43,7 @@ ${WGET} -O libev.tar.gz ${LIBEV_URL} &&\
 echo "${LIBEV_SHA256}  libev.tar.gz" | sha256sum -c - &&\
 tar xf libev.tar.gz &&\
 mv libev-${LIBEV_VER} libev &&\
-rm -f libev.sha256 libev.tar.gz &&\
+rm -f libev.tar.gz &&\
 cd libev &&\
 ./configure --enable-static --disable-shared &&\
 make clean install -j${MAKE_J} &&\
@@ -49,12 +53,22 @@ ${WGET} -O openssl.tar.gz ${OPENSSL_URL} &&\
 echo "${OPENSSL_SHA256}  openssl.tar.gz" | sha256sum -c - &&\
 tar xf openssl.tar.gz &&\
 mv openssl-${OPENSSL_VER} openssl &&\
-rm -f openssl.sha256 openssl.tar.gz &&\
+rm -f openssl.tar.gz &&\
 cd openssl &&\
 ./config zlib &&\
 make clean install &&\
 cd .. &&\
 rm -rf openssl &&\
+${WGET} -O c-ares.tar.gz ${C_ARES_URL} &&\
+echo "${C_ARES_SHA256}  c-ares.tar.gz" | sha256sum -c - &&\
+tar xf c-ares.tar.gz &&\
+mv c-ares-${C_ARES_VER} c-ares &&\
+rm -f c-ares.tar.gz &&\
+cd c-ares &&\
+./configure --disable-dependency-tracking --enable-shared=no --enable-static=yes &&\
+make clean install &&\
+cd .. &&\
+rm -rf c-ares &&\
 ${WGET} -O nghttp2.tar.gz ${NGHTTP2_URL} &&\
 echo "${NGHTTP2_SHA256}  nghttp2.tar.gz" | sha256sum -c - &&\
 tar xf nghttp2.tar.gz && \
