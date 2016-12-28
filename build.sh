@@ -17,9 +17,9 @@ OPENSSL_VER=1.0.2j
 OPENSSL_URL=ftp://ftp.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
 OPENSSL_SHA256=e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
 
-NGHTTP2_VER=1.17.0
+NGHTTP2_VER=1.18.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=d7f1c3ea4ca8325998607140284e8640743366cc9ec87fbbcc11842e6106f2c4
+NGHTTP2_SHA256=30b7a1fc21f58eadbcd124791dd7dbda50b9d4ad113b49d78d04ded49c22be8a
 
 WGET="wget --no-check-certificate --secure-protocol=TLSv1 -T 30 -nv"
 
