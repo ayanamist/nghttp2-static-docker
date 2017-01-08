@@ -5,9 +5,9 @@ if [[ -z ${MAKE_J} ]]; then
   MAKE_J=$(grep -c ^processor /proc/cpuinfo)
 fi
 
-ZLIB_VER=1.2.8
+ZLIB_VER=1.2.10
 ZLIB_URL=http://zlib.net/zlib-${ZLIB_VER}.tar.gz
-ZLIB_SHA256=36658cb768a54c1d4dec43c3116c27ed893e88b02ecfcb44f2166f9c0b7f2a0d
+ZLIB_SHA256=8d7e9f698ce48787b6e1c67e6bff79e487303e66077e25cb9784ac8835978017
 
 LIBEV_VER=4.23
 LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-${LIBEV_VER}.tar.gz
