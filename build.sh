@@ -32,53 +32,39 @@ cd /build &&\
 ${WGET} -O zlib.tar.gz ${ZLIB_URL} &&\
 echo "$ZLIB_SHA256  zlib.tar.gz" | sha256sum -c - &&\
 tar xf zlib.tar.gz &&\
-mv zlib-${ZLIB_VER} zlib &&\
-rm -f zlib.tar.gz &&\
-cd zlib &&\
+cd zlib-${ZLIB_VER} &&\
 ./configure --static &&\
 make clean install -j${MAKE_J} &&\
 cd .. &&\
-rm -rf zlib &&\
 ${WGET} -O libev.tar.gz ${LIBEV_URL} &&\
 echo "${LIBEV_SHA256}  libev.tar.gz" | sha256sum -c - &&\
 tar xf libev.tar.gz &&\
-mv libev-${LIBEV_VER} libev &&\
-rm -f libev.tar.gz &&\
-cd libev &&\
+cd libev-${LIBEV_VER} &&\
 ./configure --enable-static --disable-shared &&\
 make clean install -j${MAKE_J} &&\
 cd .. &&\
-rm -rf libev &&\
 ${WGET} -O openssl.tar.gz ${OPENSSL_URL} &&\
 echo "${OPENSSL_SHA256}  openssl.tar.gz" | sha256sum -c - &&\
 tar xf openssl.tar.gz &&\
-mv openssl-${OPENSSL_VER} openssl &&\
-rm -f openssl.tar.gz &&\
-cd openssl &&\
+cd openssl-${OPENSSL_VER} &&\
 ./config zlib &&\
 make clean install &&\
 cd .. &&\
-rm -rf openssl &&\
 ${WGET} -O c-ares.tar.gz ${C_ARES_URL} &&\
 echo "${C_ARES_SHA256}  c-ares.tar.gz" | sha256sum -c - &&\
 tar xf c-ares.tar.gz &&\
-mv c-ares-${C_ARES_VER} c-ares &&\
-rm -f c-ares.tar.gz &&\
-cd c-ares &&\
+cd c-ares-${C_ARES_VER} &&\
 ./configure --disable-dependency-tracking --enable-shared=no --enable-static=yes &&\
 make clean install &&\
 cd .. &&\
-rm -rf c-ares &&\
 ${WGET} -O nghttp2.tar.gz ${NGHTTP2_URL} &&\
 echo "${NGHTTP2_SHA256}  nghttp2.tar.gz" | sha256sum -c - &&\
 tar xf nghttp2.tar.gz && \
-mv nghttp2-${NGHTTP2_VER} nghttp2 &&\
-rm -f nghttp2.sha256 nghttp2.tar.gz &&\
-cd nghttp2 && \
+cd nghttp2-${NGHTTP2_VER} && \
 export PKG_CONFIG_PATH="/usr/local/ssl/lib/pkgconfig:/usr/local/lib/pkgconfig" &&\
 export PKG_CONFIG="pkg-config --static" &&\
 export LDFLAGS="-static-libgcc -static-libstdc++ -static" &&\
 ./configure --enable-app=yes --enable-asio-lib=no --enable-examples=no --enable-hpack-tools=no --enable-python-bindings=no --with-libxml2=no --with-spdylay=no --enable-static --disable-shared --disable-dependency-tracking &&\
 make clean install -j${MAKE_J} &&\
-cd .. &&\
-rm -rf nghttp2
+cd / &&\
+rm -rf /build
