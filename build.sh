@@ -5,21 +5,21 @@ if [[ -z ${MAKE_J} ]]; then
   MAKE_J=$(grep -c ^processor /proc/cpuinfo)
 fi
 
-ZLIB_VER=1.2.10
+ZLIB_VER=1.2.11
 ZLIB_URL=http://zlib.net/zlib-${ZLIB_VER}.tar.gz
-ZLIB_SHA256=8d7e9f698ce48787b6e1c67e6bff79e487303e66077e25cb9784ac8835978017
+ZLIB_SHA256=c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
 
-LIBEV_VER=4.23
+LIBEV_VER=4.24
 LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-${LIBEV_VER}.tar.gz
-LIBEV_SHA256=c7fe743e0c3b50dd34bf222ebdba4e8acac031d41ce174f17890f8f84eeddd7a
+LIBEV_SHA256=973593d3479abdf657674a55afe5f78624b0e440614e2b8cb3a07f16d4d7f821
 
 OPENSSL_VER=1.0.2j
 OPENSSL_URL=ftp://ftp.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
 OPENSSL_SHA256=e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
 
-NGHTTP2_VER=1.18.1
+NGHTTP2_VER=1.19.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=131475e5dbfa1b497ec75637cf9d7b9149c51c83cbd6fc4e55bc6c9d12afa597
+NGHTTP2_SHA256=b67946ad211aa3f7c91f4d866f47b056e821da8e31ab4636130d59be87f53016
 
 C_ARES_VER=1.12.0
 C_ARES_URL=https://c-ares.haxx.se/download/c-ares-${C_ARES_VER}.tar.gz
