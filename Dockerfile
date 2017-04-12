@@ -2,6 +2,8 @@ FROM centos:centos5
 
 ARG MAKE_J
 
+RUN rm -f /etc/yum.repos.d/*.repo
+ADD CentOS-Vault.repo /etc/yum.repos.d/CentOS-Vault.repo
 ADD build.sh /
 RUN touch /var/lib/rpm/* &&\
   yum install -y wget &&\
