@@ -17,9 +17,9 @@ OPENSSL_VER=1.0.2k
 OPENSSL_URL=ftp://ftp.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
 OPENSSL_SHA256=6b3977c61f2aedf0f96367dcfb5c6e578cf37e7b8d913b4ecb6643c3cb88d8c0
 
-NGHTTP2_VER=1.21.1
+NGHTTP2_VER=1.22.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=4d575f872fe91bf45c424d93b5b566728d6250b5c7af4ffd7753c52cbac9e609
+NGHTTP2_SHA256=f4b5f3afdad69ea2b2542bc998128e2d02a33c40e53e60fd814788518b56b13f
 
 C_ARES_VER=1.12.0
 C_ARES_URL=https://c-ares.haxx.se/download/c-ares-${C_ARES_VER}.tar.gz
