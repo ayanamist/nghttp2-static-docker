@@ -13,9 +13,9 @@ LIBEV_VER=4.24
 LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-${LIBEV_VER}.tar.gz
 LIBEV_SHA256=973593d3479abdf657674a55afe5f78624b0e440614e2b8cb3a07f16d4d7f821
 
-OPENSSL_VER=1.0.2k
-OPENSSL_URL=ftp://ftp.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
-OPENSSL_SHA256=6b3977c61f2aedf0f96367dcfb5c6e578cf37e7b8d913b4ecb6643c3cb88d8c0
+OPENSSL_VER=1_0_2l
+OPENSSL_URL=https://github.com/openssl/openssl/archive/OpenSSL_${OPENSSL_VER}.tar.gz
+OPENSSL_SHA256=a3d3a7c03c90ba370405b2d12791598addfcafb1a77ef483c02a317a56c08485
 
 NGHTTP2_VER=1.23.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
@@ -46,7 +46,7 @@ cd .. &&\
 ${WGET} -O openssl.tar.gz ${OPENSSL_URL} &&\
 echo "${OPENSSL_SHA256}  openssl.tar.gz" | sha256sum -c - &&\
 tar xf openssl.tar.gz &&\
-cd openssl-${OPENSSL_VER} &&\
+cd openssl-OpenSSL_${OPENSSL_VER} &&\
 ./config zlib &&\
 make clean install &&\
 cd .. &&\
