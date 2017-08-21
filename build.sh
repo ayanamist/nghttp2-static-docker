@@ -21,9 +21,9 @@ NGHTTP2_VER=1.25.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
 NGHTTP2_SHA256=23fe0c97505a73154bbdfd2fcf47f5fa652ad8be4a88c3a4bfe8ff517026ef0f
 
-C_ARES_VER=1.12.0
+C_ARES_VER=1.13.0
 C_ARES_URL=https://c-ares.haxx.se/download/c-ares-${C_ARES_VER}.tar.gz
-C_ARES_SHA256=8692f9403cdcdf936130e045c84021665118ee9bfea905d1a76f04d4e6f365fb
+C_ARES_SHA256=03f708f1b14a26ab26c38abd51137640cb444d3ec72380b21b20f1a8d2861da7
 
 WGET="wget --no-check-certificate --secure-protocol=TLSv1 -T 30 -nv"
 
