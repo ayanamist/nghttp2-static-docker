@@ -5,7 +5,6 @@ if [[ -z ${MAKE_J} ]]; then
   MAKE_J=$(grep -c ^processor /proc/cpuinfo)
 fi
 
-mkdir /build &&\
 cd /build &&\
 tar xf zlib.tar.gz &&\
 cd zlib-* &&\
