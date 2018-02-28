@@ -24,6 +24,7 @@ C_ARES_SHA256=03f708f1b14a26ab26c38abd51137640cb444d3ec72380b21b20f1a8d2861da7
 
 WGET="wget -T 30 -nv"
 
+apt-get update &&\
 apt-get install -y wget &&\
 cd /tmp &&\
 ${WGET} -O zlib.tar.gz ${ZLIB_URL} &&\
