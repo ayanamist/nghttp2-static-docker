@@ -5,7 +5,7 @@ RUN bash /download.sh
 FROM ayanamist/centos5-devtools2:latest AS build
 ARG MAKE_J
 ADD build.sh /
-COPY --from=download /build /
+COPY --from=download /download /build
 RUN scl enable devtoolset-2 /build.sh
 
 FROM centos:centos5

@@ -23,8 +23,7 @@ C_ARES_SHA256=03f708f1b14a26ab26c38abd51137640cb444d3ec72380b21b20f1a8d2861da7
 WGET="wget -T 30 -nv"
 
 apt-get install -y wget &&\
-mkdir /build &&\
-cd /build &&\
+cd /tmp &&\
 ${WGET} -O zlib.tar.gz ${ZLIB_URL} &&\
 echo "$ZLIB_SHA256  zlib.tar.gz" | sha256sum -c - &&\
 ${WGET} -O libev.tar.gz ${LIBEV_URL} &&\
@@ -35,3 +34,5 @@ ${WGET} -O c-ares.tar.gz ${C_ARES_URL} &&\
 echo "${C_ARES_SHA256}  c-ares.tar.gz" | sha256sum -c - &&\
 ${WGET} -O nghttp2.tar.gz ${NGHTTP2_URL} &&\
 echo "${NGHTTP2_SHA256}  nghttp2.tar.gz" | sha256sum -c - &&\
+mkdir /download &&\
+mv *.tar.gz /download
