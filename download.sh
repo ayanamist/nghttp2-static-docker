@@ -14,13 +14,13 @@ OPENSSL_VER=1.0.2o
 OPENSSL_URL=https://www.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
 OPENSSL_SHA256=ec3f5c9714ba0fd45cb4e087301eb1336c317e0d20b575a125050470e8089e4d
 
-NGHTTP2_VER=1.31.1
+NGHTTP2_VER=1.32.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=66562e26c2a8112eb3d15e8521290352cbb5a8295271583840cb9a9f225c7195
+NGHTTP2_SHA256=f75e8f228217f23aa5eabfbab140e061cda00b7c21e34c891ecfb248d663303f
 
-C_ARES_VER=1.13.0
-C_ARES_URL=https://c-ares.haxx.se/download/c-ares-${C_ARES_VER}.tar.gz
-C_ARES_SHA256=03f708f1b14a26ab26c38abd51137640cb444d3ec72380b21b20f1a8d2861da7
+C_ARES_VER=1.14.0
+C_ARES_URL=https://github.com/c-ares/c-ares/files/1731591/c-ares-${C_ARES_VER}.tar.gz
+C_ARES_SHA256=45d3c1fd29263ceec2afc8ff9cd06d5f8f889636eb4e80ce3cc7f0eaf7aadc6e
 
 WGET="wget -T 30 -nv"
 
