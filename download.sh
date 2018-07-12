@@ -10,9 +10,9 @@ LIBEV_VER=4.24
 LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-${LIBEV_VER}.tar.gz
 LIBEV_SHA256=973593d3479abdf657674a55afe5f78624b0e440614e2b8cb3a07f16d4d7f821
 
-OPENSSL_VER=1.0.2o
+OPENSSL_VER=1.1.0h
 OPENSSL_URL=https://www.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
-OPENSSL_SHA256=ec3f5c9714ba0fd45cb4e087301eb1336c317e0d20b575a125050470e8089e4d
+OPENSSL_SHA256=5835626cde9e99656585fc7aaa2302a73a7e1340bf8c14fd635a62c66802a517
 
 NGHTTP2_VER=1.32.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
