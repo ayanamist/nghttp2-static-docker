@@ -19,7 +19,7 @@ cd .. &&\
 tar xf openssl.tar.gz &&\
 cd openssl-* &&\
 ./config zlib &&\
-make clean install &&\
+make clean install_sw &&\
 cd .. &&\
 tar xf c-ares.tar.gz &&\
 cd c-ares-* &&\
