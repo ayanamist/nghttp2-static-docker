@@ -31,7 +31,7 @@ cd nghttp2-* && \
 export PKG_CONFIG_PATH="/usr/local/ssl/lib/pkgconfig:/usr/local/lib/pkgconfig" &&\
 export PKG_CONFIG="pkg-config --static" &&\
 export LDFLAGS="-static-libgcc -static-libstdc++ -static" &&\
-./configure --enable-app=yes --enable-asio-lib=no --enable-examples=no --enable-hpack-tools=no --enable-python-bindings=no --with-libxml2=no --with-spdylay=no --enable-static --disable-shared --disable-dependency-tracking &&\
+./configure --enable-app=yes --enable-asio-lib=no --enable-examples=no --enable-hpack-tools=no --enable-python-bindings=no --with-libxml2=no --enable-static --disable-shared --disable-dependency-tracking &&\
 make clean install -j${MAKE_J} &&\
 cd / &&\
 rm -rf /build
