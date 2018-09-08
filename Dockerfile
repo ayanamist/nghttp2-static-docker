@@ -9,4 +9,4 @@ COPY --from=download /download /build
 RUN scl enable devtoolset-2 /build.sh
 
 FROM centos:centos5
-COPY --from=build /usr/local/bin /usr/local/bin
+COPY --from=build /usr/local /usr/local
