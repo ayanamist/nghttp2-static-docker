@@ -10,13 +10,13 @@ LIBEV_VER=4.24
 LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-${LIBEV_VER}.tar.gz
 LIBEV_SHA256=973593d3479abdf657674a55afe5f78624b0e440614e2b8cb3a07f16d4d7f821
 
-OPENSSL_VER=1.1.0h
+OPENSSL_VER=1.1.0i
 OPENSSL_URL=https://www.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
-OPENSSL_SHA256=5835626cde9e99656585fc7aaa2302a73a7e1340bf8c14fd635a62c66802a517
+OPENSSL_SHA256=ebbfc844a8c8cc0ea5dc10b86c9ce97f401837f3fa08c17b2cdadc118253cf99
 
-NGHTTP2_VER=1.32.0
+NGHTTP2_VER=1.33.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=f75e8f228217f23aa5eabfbab140e061cda00b7c21e34c891ecfb248d663303f
+NGHTTP2_SHA256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 C_ARES_VER=1.14.0
 C_ARES_URL=https://github.com/c-ares/c-ares/files/1731591/c-ares-${C_ARES_VER}.tar.gz
