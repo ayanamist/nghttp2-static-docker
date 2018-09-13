@@ -10,7 +10,7 @@ export PERL=/usr/local/bin/perl
 cd /build &&\
 tar xf zlib.tar.gz &&\
 cd zlib-* &&\
-./configure --static &&\
+CFLAGS="-fPIC" ./configure --static &&\
 make clean install -j${MAKE_J} &&\
 cd .. &&\
 tar xf libev.tar.gz &&\
