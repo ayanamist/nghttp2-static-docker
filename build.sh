@@ -20,7 +20,7 @@ make clean install -j${MAKE_J} &&\
 cd .. &&\
 tar xf openssl.tar.gz &&\
 cd openssl-* &&\
-./config zlib &&\
+./config zlib no-shared &&\
 make clean install_sw &&\
 cd .. &&\
 tar xf c-ares.tar.gz &&\
