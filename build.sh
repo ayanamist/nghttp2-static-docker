@@ -34,6 +34,9 @@ export PKG_CONFIG_PATH="/usr/local/lib64/pkgconfig:/usr/local/lib/pkgconfig" &&\
 export PKG_CONFIG="pkg-config --static" &&\
 export LDFLAGS="-static-libgcc -static-libstdc++ -static" &&\
 ./configure --enable-app=yes --enable-asio-lib=no --enable-examples=no --enable-hpack-tools=no --enable-python-bindings=no --with-libxml2=no --enable-static --disable-shared --disable-dependency-tracking &&\
-make clean install -j${MAKE_J} &&\
+make clean -j${MAKE_J} &&\
+make -j${MAKE_J} &&\
+rm -rf /usr/local &&\
+make install -j${MAKE_J} &&\
 cd / &&\
 rm -rf /build
