@@ -14,9 +14,9 @@ OPENSSL_VER=1.1.1
 OPENSSL_URL=https://www.openssl.org/source/openssl-${OPENSSL_VER}.tar.gz
 OPENSSL_SHA256=2836875a0f89c03d0fdf483941512613a50cfb421d6fd94b9f41d7279d586a3d
 
-NGHTTP2_VER=1.33.0
+NGHTTP2_VER=1.34.0
 NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v${NGHTTP2_VER}/nghttp2-${NGHTTP2_VER}.tar.gz
-NGHTTP2_SHA256=42fff7f290100c02234ac3b0095852e4392e6bfd95ebed900ca8bd630850d88c
+NGHTTP2_SHA256=8889399ddd38aa0405f6e84f1c050a292286089441686b8a9c5e937de4f5b61d
 
 C_ARES_VER=1.14.0
 C_ARES_URL=https://github.com/c-ares/c-ares/files/1731591/c-ares-${C_ARES_VER}.tar.gz
