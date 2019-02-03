@@ -5,14 +5,14 @@ set -x
 ZLIB_URL=http://zlib.net/zlib-1.2.11.tar.gz
 ZLIB_SHA256=c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
 
-LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-4.24.tar.gz
-LIBEV_SHA256=973593d3479abdf657674a55afe5f78624b0e440614e2b8cb3a07f16d4d7f821
+LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-4.25.tar.gz
+LIBEV_SHA256=78757e1c27778d2f3795251d9fe09715d51ce0422416da4abb34af3929c02589
 
 OPENSSL_URL=https://www.openssl.org/source/openssl-1.1.1a.tar.gz
 OPENSSL_SHA256=fc20130f8b7cbd2fb918b2f14e2f429e109c31ddd0fb38fc5d71d9ffed3f9f41
 
-NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v1.34.0/nghttp2-1.34.0.tar.gz
-NGHTTP2_SHA256=8889399ddd38aa0405f6e84f1c050a292286089441686b8a9c5e937de4f5b61d
+NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v1.36.0/nghttp2-1.36.0.tar.gz
+NGHTTP2_SHA256=6b222a264aca23d497f7878a7751bd9da12676717493fe747db49afb51daae79
 
 C_ARES_URL=https://github.com/c-ares/c-ares/releases/download/cares-1_15_0/c-ares-1.15.0.tar.gz
 C_ARES_SHA256=6cdb97871f2930530c97deb7cf5c8fa4be5a0b02c7cea6e7c7667672a39d6852

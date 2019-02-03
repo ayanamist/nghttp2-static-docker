@@ -5,8 +5,6 @@ if [[ -z ${MAKE_J} ]]; then
   MAKE_J=$(grep -c ^processor /proc/cpuinfo)
 fi
 
-export PERL=/usr/local/bin/perl
-
 cd /build &&\
 tar xf zlib.tar.gz &&\
 cd zlib-* &&\
