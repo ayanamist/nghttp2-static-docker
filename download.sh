@@ -38,4 +38,4 @@ echo "${NGHTTP2_SHA256}  nghttp2.tar.gz" | sha256sum -c - &&\
 ${WGET} -O jemalloc.tar.bz2 ${JEMALLOC_URL} &&\
 echo "${JEMALLOC_SHA256}  jemalloc.tar.bz2" | sha256sum -c - &&\
 mkdir /download &&\
-mv *.tar.gz /download
+mv *.tar.* /download
