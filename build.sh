@@ -6,6 +6,11 @@ if [[ -z ${MAKE_J} ]]; then
 fi
 
 cd /build &&\
+tar xf jemalloc.tar.bz2 &&\
+cd jemalloc-* &&\
+./configure &&\
+make clean install &&\
+cd .. &&\
 tar xf zlib.tar.gz &&\
 cd zlib-* &&\
 CFLAGS="-fPIC" ./configure --static &&\
@@ -23,15 +28,15 @@ make clean install_sw &&\
 cd .. &&\
 tar xf c-ares.tar.gz &&\
 cd c-ares-* &&\
-./configure --disable-dependency-tracking --enable-shared=no --enable-static=yes &&\
+./configure --disable-dependency-tracking --enable-shared=no --enable-static=yes --disable-shared &&\
 make clean install &&\
 cd .. &&\
 tar xf nghttp2.tar.gz && \
 cd nghttp2-* && \
 export PKG_CONFIG_PATH="/usr/local/lib64/pkgconfig:/usr/local/lib/pkgconfig" &&\
 export PKG_CONFIG="pkg-config --static" &&\
-export LDFLAGS="-static-libgcc -static-libstdc++ -static" &&\
-./configure --enable-app=yes --enable-asio-lib=no --enable-examples=no --enable-hpack-tools=no --enable-python-bindings=no --with-libxml2=no --enable-static --disable-shared --disable-dependency-tracking &&\
+export LDFLAGS="-static-libgcc -static-libstdc++" &&\
+./configure --enable-app=yes --enable-asio-lib=no --enable-examples=no --enable-hpack-tools=no --enable-python-bindings=no --with-libxml2=no --enable-static --disable-shared --disable-examples --disable-dependency-tracking &&\
 make clean -j${MAKE_J} &&\
 make -j${MAKE_J} &&\
 rm -rf /usr/local &&\
