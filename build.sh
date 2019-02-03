@@ -6,11 +6,6 @@ if [[ -z ${MAKE_J} ]]; then
 fi
 
 cd /build &&\
-tar xf jemalloc.tar.bz2 &&\
-cd jemalloc-* &&\
-./configure &&\
-make clean install &&\
-cd .. &&\
 tar xf zlib.tar.gz &&\
 cd zlib-* &&\
 CFLAGS="-fPIC" ./configure --static &&\

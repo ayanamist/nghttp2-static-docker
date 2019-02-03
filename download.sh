@@ -17,9 +17,6 @@ NGHTTP2_SHA256=6b222a264aca23d497f7878a7751bd9da12676717493fe747db49afb51daae79
 C_ARES_URL=https://github.com/c-ares/c-ares/releases/download/cares-1_15_0/c-ares-1.15.0.tar.gz
 C_ARES_SHA256=6cdb97871f2930530c97deb7cf5c8fa4be5a0b02c7cea6e7c7667672a39d6852
 
-JEMALLOC_URL=https://github.com/jemalloc/jemalloc/releases/download/5.1.0/jemalloc-5.1.0.tar.bz2
-JEMALLOC_SHA256=5396e61cc6103ac393136c309fae09e44d74743c86f90e266948c50f3dbb7268
-
 WGET="wget -T 30 -nv"
 
 apt-get update &&\
@@ -35,7 +32,5 @@ ${WGET} -O c-ares.tar.gz ${C_ARES_URL} &&\
 echo "${C_ARES_SHA256}  c-ares.tar.gz" | sha256sum -c - &&\
 ${WGET} -O nghttp2.tar.gz ${NGHTTP2_URL} &&\
 echo "${NGHTTP2_SHA256}  nghttp2.tar.gz" | sha256sum -c - &&\
-${WGET} -O jemalloc.tar.bz2 ${JEMALLOC_URL} &&\
-echo "${JEMALLOC_SHA256}  jemalloc.tar.bz2" | sha256sum -c - &&\
 mkdir /download &&\
 mv *.tar.* /download
