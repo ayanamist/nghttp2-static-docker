@@ -11,8 +11,8 @@ LIBEV_SHA256=78757e1c27778d2f3795251d9fe09715d51ce0422416da4abb34af3929c02589
 OPENSSL_URL=https://www.openssl.org/source/openssl-1.1.1b.tar.gz
 OPENSSL_SHA256=5c557b023230413dfb0756f3137a13e6d726838ccd1430888ad15bfb2b43ea4b
 
-NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v1.37.0/nghttp2-1.37.0.tar.gz
-NGHTTP2_SHA256=760981ab5703d3ed185eccb322321d379453974357a3263971a928c2879a43bf
+NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v1.38.0/nghttp2-1.38.0.tar.gz
+NGHTTP2_SHA256=fe9a75ec44e3a2e8f7f0cb83ad91e663bbc4c5085baf37b57ee2610846d7cf5d
 
 C_ARES_URL=https://github.com/c-ares/c-ares/releases/download/cares-1_15_0/c-ares-1.15.0.tar.gz
 C_ARES_SHA256=6cdb97871f2930530c97deb7cf5c8fa4be5a0b02c7cea6e7c7667672a39d6852
