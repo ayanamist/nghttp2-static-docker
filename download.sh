@@ -5,14 +5,14 @@ set -x
 ZLIB_URL=http://zlib.net/zlib-1.2.11.tar.gz
 ZLIB_SHA256=c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
 
-LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-4.25.tar.gz
-LIBEV_SHA256=78757e1c27778d2f3795251d9fe09715d51ce0422416da4abb34af3929c02589
+LIBEV_URL=http://dist.schmorp.de/libev/Attic/libev-4.27.tar.gz
+LIBEV_SHA256=2d5526fc8da4f072dd5c73e18fbb1666f5ef8ed78b73bba12e195cfdd810344e
 
-OPENSSL_URL=https://www.openssl.org/source/openssl-1.1.1c.tar.gz
-OPENSSL_SHA256=f6fb3079ad15076154eda9413fed42877d668e7069d9b87396d0804fdb3f4c90
+OPENSSL_URL=https://www.openssl.org/source/openssl-1.1.1d.tar.gz
+OPENSSL_SHA256=1e3a91bc1f9dfce01af26026f856e064eab4c8ee0a8f457b5ae30b40b8b711f2
 
-NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v1.39.2/nghttp2-1.39.2.tar.gz
-NGHTTP2_SHA256=fc820a305e2f410fade1a3260f09229f15c0494fc089b0100312cd64a33a38c0
+NGHTTP2_URL=https://github.com/nghttp2/nghttp2/releases/download/v1.40.0/nghttp2-1.40.0.tar.gz
+NGHTTP2_SHA256=eb9d9046495a49dd40c7ef5d6c9907b51e5a6b320ea6e2add11eb8b52c982c47
 
 C_ARES_URL=https://github.com/c-ares/c-ares/releases/download/cares-1_15_0/c-ares-1.15.0.tar.gz
 C_ARES_SHA256=6cdb97871f2930530c97deb7cf5c8fa4be5a0b02c7cea6e7c7667672a39d6852
