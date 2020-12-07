@@ -4,8 +4,9 @@ RUN bash /download.sh
 
 FROM centos:centos6 AS build
 ARG MAKE_J
-RUN yum install -y centos-release-scl &&\
-    yum install -y devtoolset-7
+RUN rm -f /etc/yum.repos.d/*.repo
+ADD *.repo /etc/yum.repos.d/
+RUN yum install -y centos-release-scl && yum install -y devtoolset-7
 ADD build.sh /
 COPY --from=download /download /build
 RUN scl enable devtoolset-7 /build.sh
